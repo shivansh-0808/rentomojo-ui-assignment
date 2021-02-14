@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+.form-control {
+  box-shadow: 0 10px 40px 0 rgb(80, 70, 51);
+}
+.form-control::placeholder {
+  font-family: FontAwesome;
+
+}
+
+th{
+  height :10px;
+  color :black;
+}
+td{
+  color:black;
+}
+
+table{
+  border: 1px solid;
+}
+
+.paginate-search{
+  max-width: 500px;
+  padding-bottom: 50px;
+  margin-left: 700px;
+}
+
+a:hover {
+  transform: scale(1.2);
+  color: palevioletred;
+}

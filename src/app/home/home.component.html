@@ -1,0 +1,27 @@
+<div>
+<div class = "paginate-search">
+  <input class = "form-control" type ="text" name ="search" [(ngModel)] = "searchText" autocomplete="off" placeholder="&#61442; Search filter">
+</div>
+  <div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Company</th>
+          <th>Blog Posts</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of dataset | filter: searchText">
+          <td>{{data.name}}</td>
+          <td>{{data.company.name}}</td>
+          <td><a routerLink="/posts" (click)="getPosts(data)">Posts Page</a></td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+</div>
